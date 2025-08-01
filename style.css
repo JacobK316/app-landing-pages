@@ -4,8 +4,14 @@ img.developer{
   box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
 }
 
+.center-dev-image {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
 .dev-story {
-  max-width: 700px;
+  max-width: 900px;
   margin: 40px auto;
   padding: 20px;
   background-color: #fdfdfd;
