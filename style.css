@@ -44,6 +44,16 @@ img.developer{
   color: rgb(7, 7, 233);
 }
 
-#QA {
-  padding: 150px;
+.padding {
+  padding-left: 40px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.QA {
+  padding: 10px;
+}
+
+.jwsupport {
+  margin: 3%;
 }
