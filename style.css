@@ -39,3 +39,7 @@ img.developer{
   margin-bottom: 10px;
   color: #34495e;
 }
+
+.app-list {
+  color: red;
+}
