@@ -3,3 +3,33 @@ img.developer{
   border-radius: 100px;
   box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
 }
+
+.dev-story {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fdfdfd;
+  border-radius: 12px;
+  box-shadow: 0 4px 12 px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.dev-story h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.dev-story {
+  margin-bottom: 16px;
+}
+
+.dev-story strong {
+  font-size: 1.2em;
+  display: block;
+  margin-bottom: 10px;
+  color: #34495e;
+}
