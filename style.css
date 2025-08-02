@@ -57,3 +57,46 @@ img.developer{
 .jwsupport {
   margin: 3%;
 }
+
+.app-showcase {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.app-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.app-card:hover {
+  transform: translateY(-5px);
+}
+
+.app-logo {
+  width: 80px;
+  margin-bottom: 1rem;
+  border-radius: 40px;
+  border-bottom: ridge;
+}
+
+.app-link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #0077cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 7px;
+  transition: background-color 0.2s ease;
+}
+
+.app-link:hover {
+  background-color: #005fa3;
+}
