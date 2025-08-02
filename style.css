@@ -73,6 +73,8 @@ img.developer{
   padding: 1.5rem;
   text-align: center;
   transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .app-card:hover {
