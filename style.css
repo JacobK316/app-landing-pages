@@ -2,11 +2,11 @@
   position: fixed;
   top: 10px;
   right: 10px;
-  width: 70px;
+  width: 65px;
   height: auto;
   border-radius: 40px;
   border: 1px solid blue;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .developer:hover {
@@ -71,7 +71,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
-  padding: 2rem;
+  padding: 3.5rem;
   background-color: #f9f9f9;
 }
 
