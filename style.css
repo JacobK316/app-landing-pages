@@ -68,6 +68,7 @@
 }
 
 .app-showcase {
+  border-radius: 1rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
@@ -120,8 +121,7 @@
 }
 
 body {
-  background-color: #f9f9f9;
-  background: linear-gradient(to right, #c31c8e, #21ab46);
+  background: linear-gradient(to top, #d7cbd3, #c0c8c2);
   position: relative;
   margin: 0;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -132,7 +132,7 @@ body {
 }
 
 .page-wrapper {
-  background: rgba(175, 35, 35, 0.6);
+  background: rgba(251, 251, 251, 0.6);
   backdrop-filter: blur(10px);
   border-radius: 12px;
   padding: 2rem;
