@@ -1,9 +1,5 @@
 .developer {
-  position: fixed;
-  top: 10px;
-  right: 10px;
   width: 65px;
-  height: auto;
   border-radius: 40px;
   border: 1px solid blue;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
@@ -68,7 +64,6 @@
 }
 
 .app-showcase {
-  border-radius: 1rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
@@ -134,7 +129,6 @@ body {
 .page-wrapper {
   background: rgba(251, 251, 251, 0.6);
   backdrop-filter: blur(10px);
-  border-radius: 12px;
   padding: 2rem;
 }
 
@@ -147,5 +141,144 @@ body {
 
 .call {
   text-align: center;
-  padding-top: 1.5rem;
+}
+
+.check-apps-call {
+  display: inline;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  transition: transform 0.2s ease;
+  overflow: hidden;
+  position: static;
+  top: 20px;
+  right: 50%;
+  left: 50%;
+}
+
+.app-showcase-text-center {
+  border-radius: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #f9f9f9;
+}
+
+.story-link {
+  color: #0f5739;
+  text-align: right;
+}
+
+.story-link:hover {
+  color: #058248;
+}
+
+.main-footer {
+  background-color: gray;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+}
+
+.support-link-journalwrite {
+  color: blue;
+}
+
+.support-link-dreamframe {
+  color: purple;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 12px;
+  background-color: gray;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.grid-link {
+  color: rgb(0, 0, 255);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 1rem;
+}
+
+.dreamframe-list {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  color: purple;
+}
+
+.list-item-journalwrite {
+  color: blue;
+  padding: 0.3rem;
+}
+
+.list-item-dreamframe {
+  color: purple;
+  padding: 0.3rem;
+}
+
+.journalwrite-list {
+  color: blue;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.reserved {
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+.journalwrite-home-link {
+  color: blue;
+}
+
+.dreamframe-home-link {
+  color: purple;
+}
+
+.journalwrite-screenshot-one {
+  width: 400px;
+  padding: 1rem;
+}
+
+.journalwrite-screenshot-two {
+  width: 400px;
+  padding: 1rem;
+}
+
+.about-journalwrite {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.app-store-download {
+  display: grid;
+  text-align: center;
+  position: absolute;
+  right: 18px;
+  top: 18px;
+  background-color: black;
+  color: white;
+  font-size: 1.2cap;
+  font-weight: bolder;
+  width: 90px;
+  border-radius: 12px;
+  padding-inline: 0.5rem;
+  padding-block-start: 0.5rem;
+  padding-block-end: 0.5rem;
+  box-shadow: 0 0px 15px rgba(0,0,0,0.6);
+  text-decoration: solid;
+}
+
+.app-store-download:hover {
+  transform: scale(1.04);
+}
+
+.journalwrite-header-text {
+  padding-top: 1rem;
 }
