@@ -65,7 +65,7 @@
 
 .app-showcase {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
   padding-right: 3.5rem;
   padding-left: 3.5rem;
@@ -187,28 +187,17 @@
 }
 
 .footer-links {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  border-radius: 12px;
   background-color: gray;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   text-align: center;
   transition: transform 0.2s ease;
 }
 
-.grid-link {
-  color: rgb(0, 0, 255);
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-  gap: 1rem;
-}
-
 .dreamframe-list {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   color: purple;
+  position: relative;
+  right: 10%;
 }
 
 .list-item-journalwrite {
@@ -223,21 +212,15 @@
 
 .journalwrite-list {
   color: blue;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  position: relative;
+  right: 30%;
 }
 
 .reserved {
   font-family: 'Times New Roman', Times, serif;
   text-align: center;
-}
-
-.journalwrite-home-link {
-  color: blue;
-}
-
-.dreamframe-home-link {
-  color: purple;
 }
 
 .about-journalwrite {
@@ -298,6 +281,22 @@ main {
   text-align: center;
   padding-top: 1rem;
   padding-bottom: 2rem;
+}
+
+.app-store-download-nav {
+  padding: 0;
+  display: block;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+.app-store-wrapper-nav {
+  text-align: left;
+}
+
+.app-store-download-img {
+  width: 100px;
 }
 
 .screenshot-stack {
@@ -368,4 +367,95 @@ main {
   color: white;
   padding: 4rem 1rem;
   text-align: center;
+}
+
+.journalwrite-footer {
+  position: relative;
+  left: 30%;
+}
+
+.dreamframe-footer {
+  position: relative;
+  left: 70%;
+  margin-top: 12px;
+}
+
+/* footer.css */
+
+.main-footer {
+  background-color: #121212;
+  color: #e0e0e0;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 40px;
+  text-align: center;
+}
+
+.footer-section {
+  flex: 1 1 250px;
+}
+
+.footer-section h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin: 8px 0;
+}
+
+.footer-section a {
+  color: #e0e0e0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: rgb(3, 129, 247);
+}
+
+.footer-bottom {
+  width: 100%;
+  margin-top: 30px;
+  border-top: 1px solid #333;
+  padding-top: 20px;
+  font-size: 14px;
+  color: #999;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .main-footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.footer-social {
+  width: 100%;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.footer-social a {
+  padding: 0 2rem;
+  color: #e0e0e0;
+  font-size: 30px;
+  transition: color 0.3s ease;
+  display: inline-block;
+  line-height: 1;
+}
+
+.footer-social a:hover {
+  color: rgb(3, 129, 247);
 }

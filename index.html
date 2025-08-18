@@ -4,10 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <title>Document</title>
 </head>
 <body class="main-body">
+  <header class="navbar">
+    <div class="nav-content">
+      <nav class="nav-links">
+        <a href="../../story.html">Developer Story</a>
+        <a href="../../index.html">Apps</a>
+      </nav>
+    </div>
+  </header>
+
   <main class="padd-sect">
+
   <a href="story.html" class="story-link">
     <h3>Learn about the developer!</h3>
   </a>
@@ -18,68 +29,70 @@
     </div>
   <section class="app-showcase">
     <div class="app-card">
+      <div class="app-store-wrapper-nav">
+        <div class="app-store-download-nav">
+          <a href="https://apps.apple.com/app/idYOUR_APP_ID" target="_blank">
+            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" class="app-store-download-img">
+          </a>
+        </div>
+      </div>
       <img src="images/JournalWriteLogo.png" class="app-logo">
       <h2 class="app-title">JournalWrite</h2>
-      <p>A sleek, distraction-free journaling experience with mood tracking and daily prompts.</p>
+      <p>A free, privacy-first mood journaling app designed for clarity and calm. Capture your thoughts, track your feelings, and protect your reflections in a sleek, distraction-free space.</p>
       <a href="apps/journalwrite/index.html" class="app-link">Explore App</a>
     </div>
+
     <div class="app-card">
+      <div class="app-store-wrapper-nav">
+        <div class="app-store-download-nav">
+          <a href="https://apps.apple.com/app/idYOUR_APP_ID" target="_blank">
+            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" class="app-store-download-img">
+          </a>
+        </div>
+      </div>
       <img src="images/DreamFrameImage.png" class="app-logo">
       <h2 class="app-title">DreamFrame</h2>
-      <p>A privacy focused dream journaling app.</p>
-      <a href="apps/dreamframe/index.html" class="app-link">Explore App</a>
-    </div>
-    <div class="app-card">
-      <img src="images/DreamFrameImage.png" class="app-logo">
-      <h2 class="app-title">DreamFrame</h2>
-      <p>A privacy focused dream journaling app.</p>
+      <p>A privacy focused dream journaling app. No adds - journal with focus.</p>
       <a href="apps/dreamframe/index.html" class="app-link">Explore App</a>
     </div>
   </section>
 </section>
+</main>
   <footer class="main-footer">
-    <section class="grid-link">
-      <ul class="journalwrite-list">
-        <a href="apps/journalwrite/index.html" class="journalwrite-home-link" title="JournalWrite home page">
-          <h2>JournalWrite</h2>
-        </a>
-        <li class="list-item-journalwrite">
-          <div class="footer-links">
-            <a href="apps/journalwrite/support.html" class="support-link-journalwrite">
-              <p>JournalWrite Support</p>
-            </a>
-          </div>
-        </li>
-      <li class="list-item-journalwrite">
-        <div class="footer-links">
-          <a href="apps/journalwrite/privacy.html" class="support-link-journalwrite">
-            <p>JournalWrite Privacy Policy</p>
-          </a>
-        </div>
-      </li>
+  <div class="footer-section">
+    <h3>JournalWrite</h3>
+    <ul>
+      <li><a href="apps/journalwrite/index.html">Home</a></li>
+      <li><a href="apps/journalwrite/support.html">Support</a></li>
+      <li><a href="apps/journalwrite/privacy.html">Privacy Policy</a></li>
     </ul>
-    <ul class="dreamframe-list">
-      <a href="apps/journalwrite/index.html" class="dreamframe-home-link" title="DreamFrame home page">
-        <h2>DreamFrame</h2>
-      </a>
-      <li class="list-item-dreamframe">
-        <div class="footer-links">
-        <a href="apps/dreamframe/support.html" class="support-link-dreamframe">
-          <p>DreamFrame Support</p>
-        </a>
-      </div>
-    </li>
-    <li class="list-item-dreamframe">
-      <div class="footer-links">
-        <a href="apps/dreamframe/privacy.html" class="support-link-dreamframe">
-          <p>DreamFrame Privacy Policy</p>
-        </a>
-      </div>
-    </li>
+  </div>
+
+  <div class="footer-section">
+    <h3>DreamFrame</h3>
+    <ul>
+      <li><a href="apps/dreamframe/index.html">Home</a></li>
+      <li><a href="apps/dreamframe/support.html">Support</a></li>
+      <li><a href="apps/dreamframe/privacy.html">Privacy Policy</a></li>
     </ul>
-    </section>
-    <p class="reserved">&copy; 2025 JacobKap'sApps. All rights reserved.</p>
-  </footer>
-  </main>
+  </div>
+
+  <div class="footer-social">
+    <a href="https://github.com/jacobk316" target="_blank" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://x.com/yourusername" target="_blank" aria-label="X">
+      <i class="fab fa-x-twitter"></i>
+    </a>
+    <a href="https://instagram.com/yourusername" target="_blank" aria-label="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+  </div>
+
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 JacobKap'sApps. All rights reserved.</p>
+  </div>
+</footer>
 </body>
 </html>
