@@ -262,6 +262,7 @@
   background-color: rgba(255, 255, 255, 0.7);
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   font-family: "Inter";
+  z-index: 5;
 }
 
 .nav-content {
@@ -385,7 +386,7 @@ main {
 }
 
 .text-up-journalwrite {
-  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  background: linear-gradient(135deg, #003cff 0%, #05ebd0 100%);
   color: white;
   padding: 4rem 1rem;
   text-align: center;
