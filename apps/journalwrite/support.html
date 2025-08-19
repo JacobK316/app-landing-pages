@@ -1,40 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../style.css">
-    <title>JournalWrite Support</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../style.css" />
+  <title>JournalWrite Support</title>
 </head>
 <body class="jwsupport">
-    <h1>Support & FAQ</h1>
+  <h1 class="support-title">Support & FAQ</h1>
 
-    <section>
-        <h2>Frequently Asked Questions</h2>
-        <ul class="padding">
-            <li><strong>Q: </strong> Is my journal data stored online?<br><br><strong>A: </strong> No.</li>
-            <br>
-            <br>
-            <li><strong>Q: </strong> Can i export my writing?<br><br><strong>A: </strong> No. All data is stored on device.</li>
-        </ul>
-    </section>
+  <section class="faq">
+    <h2>❓ Frequently Asked Questions</h2>
+    <ul>
+      <li>
+        <strong>Q:</strong> Is my journal data stored online?<br />
+        <strong>A:</strong> No. JournalWrite is fully offline. Your entries are stored only on your device and never uploaded or shared.
+      </li>
+      <li>
+        <strong>Q:</strong> Can I export my writing?<br />
+        <strong>A:</strong> Not yet. All data stays on your device. Export features may be added in future updates.
+      </li>
+      <li>
+        <strong>Q:</strong> What if I forget my journal lock password?<br />
+        <strong>A:</strong> For your privacy, we don’t store or recover passwords. If you forget it, you may need to reset the app and start fresh.
+      </li>
+      <li>
+        <strong>Q:</strong> Does JournalWrite collect any personal data?<br />
+        <strong>A:</strong> No. We don’t track, collect, or transmit any personal information. Your journal is yours alone.
+      </li>
+    </ul>
+  </section>
 
-    <section>
-        <h2>Need Help?</h2>
-        <p>Fill our the form below and we'll get back to you soon.</p>
+  <section class="contact">
+    <h2>📬 Need Help?</h2>
+    <p>Fill out the form below and we'll get back to you soon.</p>
+    <p><em class="support-em">Your message is sent securely. We never share your email or personal info.</em></p>
 
-        <form action="https://formsubmit.co/jacobkappler+journalwrite@gmail.com" method="POST">
-            <label for="email">Your Email</label>
-            <input type="email" name="email" id="email" required>
+    <form action="https://formspree.io/f/xrblwbow" method="POST">
+        <label for="email">Your Email</label>
+        <input type="email" name="email" id="email" required />
 
-            <label for="message">Your Message</label>
-            <textarea name="message" id="message" required rows="6"></textarea>
+        <label for="message">Your Message</label>
+        <textarea name="message" id="message" required rows="6"></textarea>
 
-            <input type="hidden" name="_next" value="https://jacobk316.github.io/journalwrite-web-app/support.html">
-            <input type="hidden" name="_captcha" value="false">
+        <button type="submit">Send</button>
+    </form>
 
-            <button type="submit">Send</button>
-        </form>
-    </section>
+  </section>
+  <script src="../form-reset.js"></script>
 </body>
 </html>
