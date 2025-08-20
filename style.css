@@ -497,8 +497,13 @@ section {
   margin-bottom: 2.5rem;
 }
 
+.faq {
+  font-family: 'Segoe UI', sans-serif;
+}
+
 .faq ul {
   list-style: none;
+  line-height: 1.5;
   padding-left: 0;
 }
 
