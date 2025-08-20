@@ -15,36 +15,6 @@
   display: flex;
 }
 
-.dev-story {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: #fdfdfd;
-  border-radius: 12px;
-  box-shadow: 0 4px 12 px rgba(0, 0, 0, 0.1);
-  font-family: 'Segoe UI', sans-serif;
-  line-height: 1.6;
-  color: #333;
-}
-
-.dev-story h1 {
-  font-size: 2em;
-  margin-bottom: 10px;
-  color: #2c3e50;
-  text-align: center;
-}
-
-.dev-story {
-  margin-bottom: 16px;
-}
-
-.dev-story strong {
-  font-size: 1.2em;
-  display: block;
-  margin-bottom: 10px;
-  color: #34495e;
-}
-
 #apps {
   color: rgb(7, 7, 233);
 }
@@ -430,6 +400,7 @@ main {
 
 .footer-section ul li {
   margin: 8px 0;
+  padding-bottom: 0.5rem;
 }
 
 .footer-section a {
@@ -552,4 +523,13 @@ section {
 .support-em {
   color: #666;
   font-size: 0.9rem;
+}
+
+.story-back {
+  background-color: white;
+  text-align: center;
+  border-radius: 12px;
+  padding: 0.4rem 0.5rem;
+  margin: 4rem;
+  font-family: 'Segoe UI', sans-serif;
 }
