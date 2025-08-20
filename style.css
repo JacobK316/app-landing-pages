@@ -229,7 +229,6 @@
 
 .journalwrite-header {
   text-align: center;
-  padding: 40px 10px;
   color: #1b1a1a;
   font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
 }
@@ -251,7 +250,6 @@
   font-style: italic;
   text-shadow: 0 2px 4px rgba(0, 191, 165, 0.6);
 }
-
 
 .navbar {
   position: sticky;
@@ -306,20 +304,16 @@ main {
   padding-bottom: 2rem;
 }
 
-.app-store-download-nav {
-  padding: 0;
-  display: block;
-  position: absolute;
-  top: 15px;
-  right: 10px;
-}
-
 .app-store-wrapper-nav {
   text-align: left;
 }
 
 .app-store-download-img {
   width: 100px;
+}
+
+.app-download-sect {
+  text-align: right;
 }
 
 .screenshot-stack {
