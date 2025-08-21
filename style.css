@@ -364,19 +364,7 @@ main {
   border-radius: 10px;
 }
 
-.journalwrite-footer {
-  position: relative;
-  left: 30%;
-}
-
-.dreamframe-footer {
-  position: relative;
-  left: 70%;
-  margin-top: 12px;
-}
-
-/* footer.css */
-
+/* footer */
 .main-footer {
   background-color: #121212;
   color: #e0e0e0;
@@ -533,10 +521,77 @@ section {
 }
 
 .story-back {
-  background-color: white;
-  text-align: center;
+  padding: 2rem;
+  background-color: #f4f4f4;
   border-radius: 12px;
-  padding: 0.4rem 0.5rem;
-  margin: 4rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin: 2rem auto;
+}
+
+.dev-story-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.dev-story-text {
+  flex: 1;
+  min-width: 200px;
+  font-size: 1.6rem;
+  line-height: 0.8;
+  padding-right: 1rem;
+}
+
+.dev-story-image {
+  max-width: 130px;
+  flex-shrink: 0;
+}
+
+.dev-story-img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .dev-story-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .dev-story-text {
+    padding-right: 0px;
+    margin-bottom: 1rem;
+  }
+
+  .dev-story-image {
+    margin-bottom: 1rem;
+  }
+}
+
+.dev-story-title {
   font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dev-story-title h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.dev-story-title p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+  text-align: center;
 }
