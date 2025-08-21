@@ -268,6 +268,13 @@ main {
   display: block;
 }
 
+/* In the app showcase, forcing the app store badge to the right */
+.app-store-download-nav {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+}
+
 .app-store-wrapper {
   text-align: center;
   padding-top: 1rem;
