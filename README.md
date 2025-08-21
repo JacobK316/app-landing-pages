@@ -1,6 +1,6 @@
 # App Landing Pages
 
-Welcome to the official landing pages for Jacob Kappler’s apps! This project showcases two privacy-first, distraction-free apps—**JournalWrite** and **DreamFrame**—built with care, creativity, and a focus on user experience.
+Welcome to the repo for the official landing page for my apps! This project showcases the webpages for two privacy-first, distraction-free apps—**JournalWrite** and **DreamFrame**—being built with care, creativity, and a focus on user experience.
 
 ## Overview
 
@@ -9,6 +9,23 @@ This repository contains the source code for the landing pages of:
 - **DreamFrame**: A private dream journaling app, also for iOS.
 
 Each landing page is designed to be clean, modern, and informative, with clear navigation, support, and privacy information.
+
+## Contributing
+
+Contributions are most welcome! If you’d like to improve the landing page, fix bugs, or add features:
+
+1. Fork this repository
+2. Create a new branch (`git checkout -b feature-name`)
+3. Make your changes
+4. Commit and push (`git commit -m "Your message"`)
+5. Open a pull request
+
+Please keep your code clean and follow the existing style to the best of your ability. Thank you!
+
+## Things To Know
+
+These webpages are under construction and may change frequently. Development ongoing, which does mean odd placeholder text!
+The App Store links are not functional right now, but they should be live in April 2026.
 
 ## Live Demo
 
@@ -41,10 +58,10 @@ app-landing-pages/
 
 ## Features
 
-- **Modern, Responsive Design**: Looks great on desktop and mobile.
+- **Modern, Responsive Design**: Looks great on desktop and mobile (I think!).
 - **Support & Privacy**: Dedicated pages for FAQs and privacy policies.
-- **Developer Story**: Learn about the creator and the journey behind the apps.
-- **Social Links**: Connect via GitHub, X (Twitter), and Instagram.
+- **Developer Story**: Learn about the creator and his journey.
+- **Social Links**: Check me out on GitHub, X (Twitter), and Instagram.
 - **App Store Badges**: Direct download links for each app.
 
 ## Getting Started
