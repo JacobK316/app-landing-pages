@@ -120,11 +120,36 @@
 }
 
 .welcome {
-  font-size: 2.5rem;
   margin-bottom: 1rem;
   text-align: center;
   color: #222;
 }
+
+.brand-opener {
+  color: #0077ff;
+  font-family: 'Cinzel', serif;
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  background: linear-gradient(90deg, #0077ff, #c0c0c0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #0077ff; /* fallback */
+  margin: 40px auto;
+  animation: forgeReveal 1s ease-out forwards;
+  transform: translateY(40px);
+  opacity: 0;
+}
+
+@keyframes forgeReveal {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 
 .call {
   text-align: center;
