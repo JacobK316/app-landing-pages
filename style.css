@@ -1,3 +1,11 @@
+:root {
+  --help-color: rgb(255, 255, 255);
+  --main-back: rgb(199, 204, 146);
+  --journalwrite-color: rgb(78, 171, 233);
+  --dreamframe-color: rgb(156, 125, 196);
+
+}
+
 .developer {
   width: 65px;
   border-radius: 40px;
@@ -86,7 +94,7 @@
 }
 
 .main-body {
-  background: linear-gradient(to top, #d7cbd3, #c0c8c2);
+  background: linear-gradient(to bottom right, #6cc8dc, #e4e9b9);
   position: relative;
   margin: 0;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -95,8 +103,18 @@
   line-height: 1.4;
 }
 
+.main-body-journalwrite {
+  background: linear-gradient(to bottom right, rgb(150, 205, 222), var(--journalwrite-color));
+  position: relative;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.4;
+}
+
 .page-wrapper {
-  background: rgba(251, 251, 251, 0.6);
+  background: rgba(253, 253, 253, 0.6);
   backdrop-filter: blur(10px);
   padding: 2rem;
 }
@@ -211,14 +229,14 @@
 }
 
 .journal-key {
-  color: #575454;
+  color: #484343;
   letter-spacing: 1px;
 }
 
 .journal-accent {
-  color: #00bfa5;
+  color: #00e0c6;
   font-style: italic;
-  text-shadow: 0 2px 4px rgba(0, 191, 165, 0.6);
+  text-shadow: -1px 3px 7px rgba(1, 122, 141, 0.8);
 }
 
 .navbar {
