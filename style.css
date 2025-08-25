@@ -253,9 +253,16 @@
 
 .nav-content {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 0.75rem 1rem;
+}
+
+.nav-links {
+  justify-self: center;
+  display: flex;
+  gap: 1rem;
+  padding-right: 2rem;
 }
 
 .nav-links a {
@@ -272,6 +279,50 @@
 .navbar a:hover {
   text-decoration: underline;
 }
+
+.brand-image {
+  width: 50px;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.brand-text {
+  color: black;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0 1rem;
+  font-size: 28px;
+}
+
+.brand-image-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.brand-image-link:hover {
+  color: #007aff;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.brand:hover {
+  color: #007aff;
+
+  .brand-text {
+    color: #007aff;
+  }
+}
+
+.brand:hover {
+  transform: scale(1.05) translateY(-1px);
+  transition: transform 0.3s ease;
+}
+
 
 main {
   padding: 2rem;
