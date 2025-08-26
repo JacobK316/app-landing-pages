@@ -346,6 +346,10 @@
   margin: 0;
 }
 
+.journalwrite-header p {
+  font-size: 1.3rem;
+}
+
 .journal-key {
   color: #484343;
   letter-spacing: 1px;
@@ -451,12 +455,16 @@ main {
 }
 
 .padd-sect {
-  padding: 2rem;
+  padding: 1rem 1rem;
 }
 
 .app-store-download {
   height: 50px;
   display: block;
+}
+
+.app-store-link {
+  padding: 1px;
 }
 
 /* In the app showcase, forcing the app store badge to the right */
@@ -530,14 +538,14 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   padding: 40px 20px;
-  gap: 30px;
+  gap: 15px;
 }
 
 .feature {
   background: white;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  padding: 30px;
+  padding: 15px;
   max-width: 300px;
   text-align: center;
 }
