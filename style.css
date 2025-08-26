@@ -357,6 +357,10 @@
   text-shadow: -1px 3px 7px rgba(1, 122, 141, 0.8);
 }
 
+.journalwrite-feature-pitch {
+  text-align: center;
+}
+
 .navbar {
   position: sticky;
   top: 0;
