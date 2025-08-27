@@ -44,8 +44,8 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
-  padding-right: 3.5rem;
-  padding-left: 3.5rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
   padding-top: 1rem;
   padding-bottom: 1.5rem;
   background-color: #f9f9f9;
