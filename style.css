@@ -42,7 +42,7 @@
 
 .app-showcase {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
   gap: 2rem;
   padding-right: 3.5rem;
   padding-left: 3.5rem;
