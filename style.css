@@ -363,6 +363,7 @@
 
 .journalwrite-feature-pitch {
   text-align: center;
+  font-weight: 500;
 }
 
 .navbar {
@@ -557,10 +558,14 @@ main {
 
 .text-up-journalwrite {
   background: linear-gradient(135deg, #003cff 0%, #05ebd0 100%);
-  color: white;
+  color: rgb(0, 0, 0);
   padding: 4rem 1rem;
   text-align: center;
   border-radius: 10px;
+}
+
+.text-up-journalwrite p {
+  font-weight: 500;
 }
 
 /* footer */
@@ -794,3 +799,10 @@ section {
   margin-bottom: 0.75rem;
   text-align: center;
 }
+
+.journal-call {
+  font-weight: 700;
+  color: #1544df;
+  text-shadow: -1px 1px 2px rgba(42, 42, 53, 0.6);
+}
+
