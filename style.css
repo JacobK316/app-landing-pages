@@ -40,7 +40,6 @@
   margin: 3%;
 }
 
-@media (max-width: 600px) {
 .app-showcase {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -51,7 +50,7 @@
   padding-bottom: 1.5rem;
   background-color: #f9f9f9;
   max-width: 100%;
-}
+  justify-content: center;
 }
 
 .app-card {
