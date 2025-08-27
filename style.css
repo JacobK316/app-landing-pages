@@ -28,7 +28,6 @@
 }
 
 .padding {
-  padding-left: 40px;
   padding-top: 12px;
   padding-bottom: 12px;
 }
@@ -827,7 +826,7 @@ section {
   font-weight: 900;
   color: #222;
   letter-spacing: 1px;
-  text-shadow: 1px 1px 0 #ccc, 2px 2px 0 #6b6b6b;
+  text-shadow: 1px 1px 0 #9caafd, 2px 2px 0 #838583;
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
 }
