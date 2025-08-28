@@ -42,7 +42,7 @@
 
 .app-showcase {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   padding-right: 1.5rem;
   padding-left: 1.5rem;
@@ -495,44 +495,37 @@ main {
 }
 
 .screenshot-stack {
-  position: relative;
-  width: 400px;
-  margin: auto;
-  height: 300px;
-  padding-bottom: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0 1rem;
+  padding-bottom: 1rem;
 }
 
 .screenshot {
-  position: absolute;
-  width: 250px;
+  width: 100%;
+  max-width: 200px;
+  border-radius: 16px;
   transition: transform 0.3s ease;
-  border-radius: 12px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
-.left {
-  transform: rotate(-10deg);
-  left: -100px;
-  top: 30px;
-  z-index: -2;
+.screenshot:hover {
+  transform: scale(1.05);
 }
 
-.center {
-  left: 75px;
-  top: 0;
-  z-index: -1;
-}
-
-.right {
-  transform: rotate(10deg);
-  left: 250px;
-  top: 30px;
-  z-index: -2;
+@media (max-width: 600px) {
+  .screenshot-stack {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .screenshot-text-top {
-  font-size: 2rem;
   text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .features {
