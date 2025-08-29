@@ -367,6 +367,13 @@
   font-weight: 500;
 }
 
+@media (max-width: 600px) {
+  .nav-links a:nth-child(3),
+  .nav-links a:nth-child(4) {
+    display: none;
+  }
+}
+
 .navbar {
   position: sticky;
   top: 0;
