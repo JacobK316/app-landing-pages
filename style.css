@@ -347,6 +347,12 @@
   margin: 0;
 }
 
+@media (max-width: 500px) {
+  .journalwrite-header h1 {
+    font-size: 2.5rem;
+  }
+}
+
 .journalwrite-header p {
   font-size: 1.3rem;
 }
@@ -831,6 +837,12 @@ section {
   text-shadow: 1px 1px 0 #9caafd, 2px 2px 0 #838583;
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
+}
+
+@media (max-width: 500px) {
+  .journalwrite-app-name {
+    font-size: 3.3rem;
+  }
 }
 
 .journalwrite-hero {
