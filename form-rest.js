@@ -37,3 +37,35 @@ document.getElementById('myButton').addEventListener('click', () => {
   document.getElementById('clickCount').textContent = `Clicked ${count} times`;
   console.log(`Button clicked ${count} times`);
 });
+
+function getOS() {
+  const ua = navigator.userAgent;
+
+  if (/Windows NT/i.test(ua)) return "Windows";
+  if (/Macintosh/i.test(ua)) return "macOS";
+  if (/Android/i.test(ua)) return "Android";
+  if (/iPhone|iPad|iPod/i.test(ua)) return "iOS";
+  if (/Linux/i.test(ua)) return "Linux";
+
+  return "Unknown";
+}
+
+function getDeviceType() {
+  const ua = navigator.userAgent;
+  if (/Mobi|Android/i.test(ua)) return "Mobile";
+  if (/Tablet|iPad/i.test(ua)) return "Tablet";
+  return "Desktop";
+}
+
+function getBrowser() {
+  const ua = navigator.userAgent;
+  if (ua.includes("Chrome") && !ua.includes("Edg")) return "Chrome";
+  if (ua.includes("Safari") && !ua.includes("Chrome")) return "Safari";
+  if (ua.includes("Firefox")) return "Firefox";
+  if (ua.includes("Edg")) return "Edge";
+  return "Other";
+}
+
+document.getElementById("device_type").value = getDeviceType();
+document.getElementById("os").value = getOS();
+document.getElementById("browser").value = getBrowser();
