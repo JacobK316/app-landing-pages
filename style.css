@@ -128,6 +128,7 @@
   max-width: 800px;
   margin: 20px auto 60px;
   background: linear-gradient(90deg, #02080a, #12262c, #1f4757);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: #0077ff; /* fallback */
@@ -154,6 +155,7 @@
   text-transform: uppercase;
   letter-spacing: 0.08em;
   background: linear-gradient(90deg, #0077ff, #c0c0c0);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: #0077ff; /* fallback */
