@@ -66,6 +66,8 @@ function getBrowser() {
   return "Other";
 }
 
-document.getElementById("device_type").value = getDeviceType();
-document.getElementById("os").value = getOS();
-document.getElementById("browser").value = getBrowser();
+window.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("device_type").value = getDeviceType();
+  document.getElementById("os").value = getOS();
+  document.getElementById("browser").value = getBrowser();
+});
