@@ -38,6 +38,7 @@ document.getElementById('myButton').addEventListener('click', () => {
   console.log(`Button clicked ${count} times`);
 });
 
+/*
 function getOS() {
   const ua = navigator.userAgent;
 
@@ -71,3 +72,5 @@ window.addEventListener("DOMContentLoaded", () => {
   document.getElementById("os").value = getOS();
   document.getElementById("browser").value = getBrowser();
 });
+
+*/
