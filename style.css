@@ -17,12 +17,6 @@
   transform: scale(1.02);
 }
 
-.center-dev-image {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-
 #apps {
   color: rgb(7, 7, 233);
 }
