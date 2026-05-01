@@ -69,8 +69,8 @@
 .app-logo {
   width: 80px;
   margin-bottom: 1rem;
-  border-radius: 40px;
-  border-bottom: ridge;
+  border-radius: 22%;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
 }
 
 .app-link {
