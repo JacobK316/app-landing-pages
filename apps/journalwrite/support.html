@@ -37,38 +37,35 @@
       </li>
       <li>
         <strong>Q:</strong> Can I export my writing?<br />
-        <strong>A:</strong> Not yet. All data stays on your device. Export features may be added in future updates.
+        <strong>A:</strong> Yes! You can share your journal entries via the share sheet, allowing you to save them to files, email them to yourself, or share them with other apps.
       </li>
       <li>
-        <strong>Q:</strong> What if I forget my journal lock password?<br />
-        <strong>A:</strong> Since we respect your privacy and don't collect any of your data, if you forget your password we cannot recover it. Make sure to write it down!
-      </li>
-      <li>
-        <strong>Q:</strong> Can I use FaceID instead of a passowrd?<br />
-        <strong>A:</strong> Not yet, but soon! FaceID is high on the new features list, and will be considered in future updates.
+        <strong>Q:</strong> Are there any ads or in-app purchases?<br />
+        <strong>A:</strong> No! JournalWrite is completely free of advertisements, paywalls, and in-app purchases. Your experience is distraction-free and uninterrupted.
       </li>
     </ul>
   </section>
-
+  
   <section class="contact">
-    <h2>Need Help?</h2>
-    <p>Fill out the form below and we'll get back to you soon.</p>
-    <p><em class="support-em">Your message is sent securely. We never share your email or personal info.</em></p>
+  <h2>Need Help?</h2>
+  <p>If you have a question, found a bug, or need support, just send us an email.</p>
 
-    <form action="https://formspree.io/f/xrblwbow" method="POST">
-        <label for="email">Your Email</label>
-        <input type="email" name="email" id="email" required />
+  <div class="support-button-wrapper">
+    <script>
+      const user = "jkap.apps+journalwrite";
+      const domain = "gmail.com";
+      const email = user + "@" + domain;
 
-        <label for="message">Your Message</label>
-        <textarea name="message" id="message" required rows="6"></textarea>
+      const subject = encodeURIComponent("JournalWrite Support");
 
-        <!--Hidden Input-->
-        <input type="hidden" name="app" value="JournalWrite"/>
-
-        <button type="submit">Send</button>
-    </form>
-
-  </section>
+      document.write(`
+        <a class="support-button" href="mailto:${email}?subject=${subject}">
+          Email Support
+        </a>
+      `);
+    </script>
+  </div>
+</section>
   </main>
 
   <footer class="main-footer">
