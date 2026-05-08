@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,6 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <title>JournalWrite Support</title>
 </head>
+
 <body class="main-body-journalwrite">
   <header class="navbar">
     <div class="nav-content">
@@ -26,74 +28,83 @@
   </header>
 
   <main class="jwsupport">
-  <h1 class="support-title">Support & FAQ</h1>
+    <h1 class="support-title">Support & FAQ</h1>
 
-  <section class="faq">
-    <h2>Frequently Asked Questions</h2>
-    <ul>
-      <li>
-        <strong>Q:</strong> Does JournalWrite collect any personal data?<br />
-        <strong>A:</strong> No. We don’t track, collect, or transmit any personal information. Your journal data is stored on your device alone.
-      </li>
-      <li>
-        <strong>Q:</strong> Can I export my writing?<br />
-        <strong>A:</strong> Yes! You can share your journal entries via the share sheet, allowing you to save them to files, email them to yourself, or share them with other apps.
-      </li>
-      <li>
-        <strong>Q:</strong> Are there any ads or in-app purchases?<br />
-        <strong>A:</strong> No! JournalWrite is completely free of advertisements, paywalls, and in-app purchases. Your experience is distraction-free and uninterrupted.
-      </li>
-    </ul>
-  </section>
-  
-  <section class="contact">
-  <h2>Need Help?</h2>
-  <p>If you have a question, found a bug, or need support, just send us an email.</p>
+    <section class="faq">
+      <h2>Frequently Asked Questions</h2>
+      <ul>
+        <li>
+          <strong>Q:</strong> Does JournalWrite collect any personal data?<br />
+          <strong>A:</strong> No. We don’t track, collect, or transmit any personal information. Your journal data is
+          stored on your device alone.
+        </li>
+        <li>
+          <strong>Q:</strong> Can I export my writing?<br />
+          <strong>A:</strong> Yes! You can share your journal entries via the share sheet, allowing you to save them to
+          files, email them to yourself, or share them with other apps.
+        </li>
+        <li>
+          <strong>Q:</strong> Are there any ads or in-app purchases?<br />
+          <strong>A:</strong> No! JournalWrite is completely free of advertisements, paywalls, and in-app purchases.
+          Your experience is distraction-free and uninterrupted.
+        </li>
+      </ul>
+    </section>
 
-  <div class="support-button-wrapper">
-    <script>
-      const user = "jkap.apps+journalwrite";
-      const domain = "gmail.com";
-      const email = user + "@" + domain;
+    <section class="contact">
+      <h2>Need Help?</h2>
+      <p>If you have a question, found a bug, or need support, just send us an email.</p>
 
-      const subject = encodeURIComponent("JournalWrite Support");
+      <div class="support-button-wrapper">
+        <script>
+          const user = "jkap.apps+journalwrite";
+          const domain = "gmail.com";
+          const email = user + "@" + domain;
 
-      document.write(`
+          const subject = encodeURIComponent("JournalWrite Support");
+
+          document.write(`
         <a class="support-button" href="mailto:${email}?subject=${subject}">
           Email Support
         </a>
       `);
-    </script>
-  </div>
-</section>
+        </script>
+      </div>
+    </section>
   </main>
 
   <footer class="main-footer">
-        <div class="footer-section">
-          <h3>JournalWrite</h3>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="support.html">Support</a></li>
-            <li><a href="privacy.html">Privacy Policy</a></li>
-            <li>
-              <a href="https://apps.apple.com/app/id6763682076" target="_blank" class="app-store-link-nav">
-                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" class="app-store-img">
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="footer-social">
-          <a href="https://github.com/jacobk316" target="_blank" aria-label="GitHub">
-            <i class="fab fa-github"></i>
+    <div class="footer-section">
+      <h3>JournalWrite</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li>
+          <a href="https://apps.apple.com/app/id6763682076" target="_blank" class="app-store-link-nav">
+            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+              alt="Download on the App Store" class="app-store-img">
           </a>
-        </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer-social">
+      <a href="https://github.com/jacobk316" target="_blank" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+
+      <a href="https://www.producthunt.com/products/journalwrite" target="_blank" aria-label="Product Hunt">
+        <i class="fab fa-product-hunt"></i>
+      </a>
+    </div>
 
 
-        <div class="footer-bottom">
-          <p>&copy; 2026 Jacob Kappler. All rights reserved.</p>
-        </div>
-      </footer>
-      <script src="../../form-rest.js"></script>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Jacob Kappler. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="../../form-rest.js"></script>
 </body>
+
 </html>
