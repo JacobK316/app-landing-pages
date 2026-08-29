@@ -22,10 +22,6 @@
     color: var(--muted);
 }
 /* Support contact cards. */
-.support-grid {
-    display: grid;
-    gap: 16px;
-}
 .support-card {
     padding: 25px;
 }
@@ -38,9 +34,4 @@
 }
 .support-button {
     color: var(--blue-light);
-}
-@media (min-width: 700px) {
-    .support-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
 }

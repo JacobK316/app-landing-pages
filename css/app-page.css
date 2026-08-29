@@ -13,17 +13,6 @@
     max-width: 570px;
     font-size: 1.1rem;
 }
-.app-hero-visual {
-    display: grid;
-    min-height: 420px;
-    place-items: center;
-    border: 1px solid var(--line);
-    border-radius: var(--radius-lg);
-    background: radial-gradient(circle at 50% 55%, rgba(38, 143, 255, .4), transparent 43%), linear-gradient(145deg, #102e57, #07111f);
-}
-.app-hero-visual .phone {
-    width: 205px;
-}
 .check-list {
     display: grid;
     gap: 10px;

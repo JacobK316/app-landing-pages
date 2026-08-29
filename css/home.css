@@ -16,48 +16,6 @@
     justify-content: center;
     gap: 12px;
 }
-.hero-orbit {
-    position: relative;
-    display: grid;
-    width: min(100%, 510px);
-    min-height: 310px;
-    margin: 52px auto 0;
-    place-items: center;
-    border: 1px solid var(--line);
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(39, 139, 255, .25), transparent 47%);
-}
-.hero-orbit::before, .hero-orbit::after {
-    content: "";
-    position: absolute;
-    border: 1px solid rgba(141, 203, 255, .2);
-    border-radius: 50%;
-}
-.hero-orbit::before {
-    inset: 14%;
-}
-.hero-orbit::after {
-    inset: 0;
-}
-.hero-orbit .phone {
-    transform: rotate(-7deg);
-}
-.orbit-dot {
-    position: absolute;
-    width: 13px;
-    height: 13px;
-    border-radius: 50%;
-    background: var(--blue-light);
-    box-shadow: 0 0 22px var(--blue);
-}
-.orbit-dot.one {
-    top: 16%;
-    right: 16%;
-}
-.orbit-dot.two {
-    bottom: 22%;
-    left: 12%;
-}
 /* Three-step explanation cards. */
 .process {
     display: grid;

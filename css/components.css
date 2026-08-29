@@ -103,31 +103,6 @@
     color: var(--text);
     font-size: 0.9rem;
 }
-.app-store-button {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    min-height: 52px;
-    padding: 7px 15px;
-    border-radius: 10px;
-    background: #fff;
-    color: #06080c;
-    font-weight: 800;
-    line-height: 1;
-}
-.app-store-button small {
-    display: block;
-    font-size: .62rem;
-    font-weight: 650;
-}
-.app-store-button strong {
-    display: block;
-    font-size: 1.12rem;
-    letter-spacing: -.04em;
-}
-.app-store-logo {
-    font-size: 1.7rem;
-}
 /* Reusable content cards used across several pages. */
 .card {
     border: 1px solid var(--line);
@@ -182,67 +157,6 @@
     font-size: .72rem;
     font-weight: 800;
 }
-/* CSS-only phone mockup used until real screenshots are added. */
-.phone {
-    position: relative;
-    width: 154px;
-    aspect-ratio: .49;
-    padding: 8px;
-    border: 5px solid #26374f;
-    border-radius: 28px;
-    background: #050b14;
-    box-shadow: 0 20px 45px rgba(0, 0, 0, .42);
-}
-.phone::before {
-    content: "";
-    position: absolute;
-    z-index: 2;
-    top: 8px;
-    left: 50%;
-    width: 52px;
-    height: 15px;
-    border-radius: 999px;
-    background: #050b14;
-    transform: translateX(-50%);
-}
-.phone-screen {
-    height: 100%;
-    overflow: hidden;
-    border-radius: 17px;
-    background: linear-gradient(160deg, #1e76d9, #0a2044 56%, #07111f);
-}
-.phone-ui {
-    padding: 32px 11px 12px;
-    color: white;
-    font-size: 8px;
-}
-.phone-ui h4 {
-    margin: 0 0 12px;
-    font-size: 14px;
-}
-.phone-pill {
-    height: 26px;
-    margin: 7px 0;
-    border: 1px solid rgba(255,255,255,.18);
-    border-radius: 8px;
-    background: rgba(255,255,255,.12);
-}
-.phone-chart {
-    height: 65px;
-    margin-top: 12px;
-    border-radius: 10px;
-    background: repeating-linear-gradient(to top, transparent 0 15px, rgba(255,255,255,.1) 16px);
-}
-.phone-chart::after {
-    content: "";
-    display: block;
-    width: 78%;
-    height: 42px;
-    margin: 20px 10%;
-    border-bottom: 3px solid #8dcbff;
-    border-radius: 50%;
-    transform: skewY(-18deg);
-}
 /* Feature cards and screenshot gallery. */
 .feature-grid {
     display: grid;
@@ -276,17 +190,6 @@
     overflow: hidden;
     border: 1px solid var(--line);
     border-radius: 20px;
-}
-.screenshot .phone {
-    width: 100%;
-    height: 100%;
-    padding: 6px;
-    border-width: 3px;
-    border-radius: 20px;
-    box-shadow: none;
-}
-.screenshot .phone-screen {
-    border-radius: 13px;
 }
 /* Expandable FAQ items and the waitlist call-to-action. */
 .faq-list {
