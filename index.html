@@ -1,103 +1,222 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A home for thoughtful iPhone apps.">
+  <title>Jacob Kappler — Building simple, useful apps</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  <title>Home Page</title>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/home.css">
 </head>
 
-<body class="main-body">
-  <header class="navbar">
-    <div class="nav-content">
-      <div class="brand">
-        <a href="index.html" class="brand-image-link">
-          <img src="images/General/WebsiteIcon.png" class="brand-image">
-          <h5 class="brand-text">Jacob Kappler</h5>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <!-- Shared site header -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">JK</span>
+        Jacob Kappler
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+      <div class="nav-links">
+        <a href="index.html">Apps</a>
+        <!-- <a href="#updates">Get Updates</a> -->
+        <a href="support.html">Support</a>
+      </div>
+    </nav>
+  </header>
+  <!-- Main page content -->
+  <main id="main">
+    <!-- Introductory hero and primary calls to action. -->
+    <section class="home-hero container">
+      <span class="eyebrow">Indie App Developer</span>
+      <h1>
+        Simple apps.
+        <br>
+        Real usefulness.
+      </h1>
+      <p>I'm Jacob Kappler — an indie developer and high school student building modern iPhone apps that make life a
+        little easier.</p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="#apps">
+          Explore My Apps
+        </a>
+        <!-- <a class="button button-secondary" href="#updates">Get Updates</a> -->
+      </div>
+      <!--
+                <div class="hero-orbit" aria-hidden="true">
+                    <span class="orbit-dot one"></span>
+                    <span class="orbit-dot two"></span>
+                    <div class="phone">
+                        <div class="phone-screen">
+                            <div class="phone-ui">
+                                <h4>Prayer Path</h4>
+                                <div class="phone-pill"></div>
+                                <div class="phone-pill"></div>
+                                <div class="phone-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                -->
+    </section>
+    <!-- App cards. Add a new card here whenever you launch an app. -->
+    <section id="apps" class="section container">
+      <div class="section-heading">
+        <span class="eyebrow">The apps</span>
+        <h2>Built with purpose, creativity, and care.</h2>
+        <p>Focused, modern apps — built independently by one developer who values simplicity, privacy, and real
+          usefulness.</p>
+      </div>
+      <div class="app-grid">
+        <article class="app-card card">
+          <a href="apps/journalwrite/index.html">
+            <div class="app-card-visual">
+              <img src="images/JournalWrite/JournalWriteIcon.png" alt="JournalWrite app icon" class="app-card-visual">
+            </div>
+            <div class="app-card-content">
+              <span class="status-completed">Available</span>
+              <h3>JournalWrite</h3>
+              <p>Journal in a clean, distraction-free environment designed to help you stay consistent, reflect
+                privately, and visualize your progress over time.</p>
+          </a>
+          <a class="button button-primary" href="https://apps.apple.com/app/id6763682076" target="_blank"
+            rel="noopener noreferrer">Download</a>
+          <a class="button button-secondary" href="apps/journalwrite/index.html">Learn more</a>
+      </div>
+      </article>
+      <article class="app-card card">
+        <a href="apps/flockstats/index.html">
+          <div class="app-card-visual">
+            <img src="images/EggTracker/EggTrackerIcon.png" alt="EggTracker app icon" class="app-card-visual">
+          </div>
+          <div class="app-card-content">
+            <span class="status-in-progress">In development</span>
+            <h3>Flock Stats</h3>
+            <p>Monitor your flock with an organized, easy-to-use tracker that lets you record eggs, track hens, and view
+              meaningful productivity insights.</p>
+        </a>
+        <!-- <a class="button button-primary" href="apps/flockstats/index.html#waitlist">Join Waitlist</a> -->
+        <a class="button button-secondary" href="apps/flockstats/index.html">Learn more</a>
+        </div>
+      </article>
+      </div>
+    </section>
+    <section>
+      <div class="developer-profile">
+        <a href="https://apps.apple.com/us/developer/jacob-kappler/id1894734920" target="_blank"
+          rel="noopener noreferrer" class="developer-profile-button">
+          View full Developer Profile on the App Store
         </a>
       </div>
-      <nav class="nav-links">
-        <a href="story.html">Developer Story</a>
-        <a href="index.html">Apps</a>
-      </nav>
-    </div>
-  </header>
-
-  <main class="padd-sect">
-    <h1 class="brand-opener">Jacob Kappler</h1>
-
-    <h1 class="welcome">Building apps with purpose, creativity, and care.</h1>
-
-    <section class="app-showcase-text-center">
-
-      <div class="check-apps-call">
-        <h2 class="call">Check out these apps!</h2>
-      </div>
-
-      <section class="app-showcase">
-        <div class="app-card">
-          <div class="app-store-wrapper-nav">
-            <div class="app-store-download-nav">
-              <a href="https://apps.apple.com/app/id6763682076" target="_blank">
-                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
-                  alt="Download on the App Store" class="app-store-download-img">
-              </a>
-            </div>
-          </div>
-          <img src="images/JournalWrite/JournalWriteIcon.png" class="app-logo">
-          <h2 class="app-title">JournalWrite</h2>
-          <p>A free, privacy-focused journaling app designed for statistics lovers. Capture your thoughts, track your
-            progress, and view insights in a sleek, distraction-free space.</p>
-          <a href="apps/journalwrite/index.html" class="app-link">Explore App</a>
-        </div>
-      </section>
     </section>
+    <!-- Short explanation of the developer and product approach. -->
+    <!--
+            <section id="about" class="section container">
+                <div class="section-heading">
+                    <span class="eyebrow">How I work</span>
+                    <h2>Make it clear. Make it useful. Ship it.</h2>
+                </div>
+                <div class="process">
+                    <article class="process-step card">
+                        <h3>Start with friction</h3>
+                        <p>The best ideas start with a repeated annoyance, not a feature list.</p>
+                    </article>
+                    <article class="process-step card">
+                        <h3>Keep the first version small</h3>
+                        <p>One problem solved well is more valuable than a giant unfinished app.</p>
+                    </article>
+                    <article class="process-step card">
+                        <h3>Improve with feedback</h3>
+                        <p>Reviews, messages, and real usage determine what gets built next.</p>
+                    </article>
+                </div>
+            </section>
+          -->
+    <!-- Waitlist placeholder. Connect this form to an email provider before publishing. 
+    <section id="updates" class="section container">
+      <div class="cta-band">
+        <span class="eyebrow">Stay in the loop</span>
+        <h2>Get notified about new apps, launches, and updates.</h2>
+        <p>Replace this placeholder form with your email provider’s embed code (Buttondown, ConvertKit, Mailchimp,
+          etc.).</p>
+        <form class="cta-actions" action="#" method="post">
+          <label class="visually-hidden" for="email">Email address</label>
+          <input class="waitlist-input" id="email" name="email" type="email" placeholder="you@example.com"
+            autocomplete="email" required>
+          <button class="button button-primary" type="submit">Get Updates</button>
+        </form>
+      </div>
+    </section>
+    -->
   </main>
-  <footer class="main-footer">
-    <div class="footer-section">
-      <h3>JournalWrite</h3>
-      <ul>
-        <li><a href="apps/journalwrite/index.html">Home</a></li>
-        <li><a href="apps/journalwrite/support.html">Support</a></li>
-        <li><a href="apps/journalwrite/privacy.html">Privacy Policy</a></li>
-        <li>
-          <a href="https://apps.apple.com/app/id6763682076" target="_blank" class="app-store-link-nav">
-            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
-              alt="Download on the App Store" class="app-store-img">
+  <!-- Shared site footer -->
+  <footer class="site-footer">
+    <div class="footer-grid container">
+      <div>
+        <a class="brand" href="index.html">
+          <span class="brand-mark">JK</span>
+          Jacob Kappler
+        </a>
+        <p>
+          Indie app developer and high school student.
+        </p>
+      </div>
+      <div>
+        <p class="footer-title">Explore</p>
+        <div class="footer-links">
+          <a href="#apps">Apps</a>
+          <a href="https://apps.apple.com/us/developer/jacob-kappler/id1894734920" target="_blank"
+            rel="noopener noreferrer">
+            Developer Profile
           </a>
-        </li>
-      </ul>
+        </div>
+      </div>
+      <div>
+        <p class="footer-title">Social</p>
+        <div class="footer-social">
+          <a href="https://youtube.com/@JakeKailer" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+
+          <a href="https://instagram.com/jkap.apps" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a href="https://tiktok.com/@jkap.apps" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+
+          <a href="https://github.com/jacobk316" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+
+          <a href="https://www.producthunt.com/@jakekailer" target="_blank" rel="noopener noreferrer"
+            aria-label="Product Hunt">
+            <i class="fa-brands fa-product-hunt"></i>
+          </a>
+        </div>
+      </div>
     </div>
-
-    <div class="footer-social">
-      <a href="https://youtube.com/@JakeKailer" target="_blank" aria-label="YouTube">
-        <i class="fab fa-youtube"></i>
-      </a>
-
-      <a href="https://instagram.com/jkap.apps" target="_blank" aria-label="Instagram">
-        <i class="fab fa-instagram"></i>
-      </a>
-
-      <a href="https://tiktok.com/@jkap.apps" target="_blank" aria-label="TikTok">
-        <i class="fab fa-tiktok"></i>
-      </a>
-
-      <a href="https://github.com/jacobk316" target="_blank" aria-label="GitHub">
-        <i class="fab fa-github"></i>
-      </a>
-
-      <a href="https://www.producthunt.com/@jakekailer" target="_blank" aria-label="Product Hunt">
-        <i class="fab fa-product-hunt"></i>
-      </a>
-    </div>
-
-
-    <div class="footer-bottom">
-      <p>&copy; 2026 Jacob Kappler. All rights reserved.</p>
+    <div class="footer-bottom container">
+      <span>
+        &copy;
+        <span data-year></span>
+        Jacob Kappler. All rights reserved.
+      </span>
+      <span>
+        <a href="privacy.html">Privacy</a>
+        ·
+        <a href="support.html">Support</a>
+      </span>
     </div>
   </footer>
+  <script src="site.js"></script>
 </body>
 
 </html>

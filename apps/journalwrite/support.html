@@ -1,122 +1,132 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../../style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="JournalWrite support information.">
   <title>JournalWrite Support</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="../../css/variables.css">
+  <link rel="stylesheet" href="../../css/global.css">
+  <link rel="stylesheet" href="../../css/components.css">
+  <link rel="stylesheet" href="../../css/app-support.css">
 </head>
 
-<body class="main-body-journalwrite">
-  <header class="navbar">
-    <div class="nav-content">
-      <div class="brand">
-        <a href="../../index.html" class="brand-image-link">
-          <img src="../../images/General/WebsiteIcon.png" class="brand-image">
-          <h5 class="brand-text">Jacob Kappler</h5>
-        </a>
-      </div>
-      <nav class="nav-links">
-        <a href="../../story.html">Developer Story</a>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <!-- Shared site header -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">JK</span>
+        Jacob Kappler
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+      <div class="nav-links">
         <a href="../../index.html">Apps</a>
-        <a href="index.html">Home</a>
+        <!-- <a href="../../index.html#updates">Get Updates</a> -->
+        <a href="index.html">JournalWrite</a>
         <a href="privacy.html">Privacy Policy</a>
-      </nav>
-    </div>
-  </header>
-
-  <main class="jwsupport">
-    <h1 class="support-title">Support & FAQ</h1>
-
-    <section class="faq">
-      <h2>Frequently Asked Questions</h2>
-      <ul>
-        <li>
-          <strong>Q:</strong> Does JournalWrite collect any personal data?<br />
-          <strong>A:</strong> No. We don’t track, collect, or transmit any personal information. Your journal data is
-          stored on your device alone.
-        </li>
-        <li>
-          <strong>Q:</strong> Can I export my writing?<br />
-          <strong>A:</strong> Yes! You can share your journal entries via the share sheet, allowing you to save them to
-          files, email them to yourself, or share them with other apps.
-        </li>
-        <li>
-          <strong>Q:</strong> Are there any ads or in-app purchases?<br />
-          <strong>A:</strong> No! JournalWrite is completely free of advertisements, paywalls, and in-app purchases.
-          Your experience is distraction-free and uninterrupted.
-        </li>
-      </ul>
-    </section>
-
-    <section class="contact">
-      <h2>Need Help?</h2>
-      <p>If you have a question, found a bug, or need support, just send us an email.</p>
-
-      <div class="support-button-wrapper">
-        <script>
-          const user = "jkap.apps+journalwrite";
-          const domain = "gmail.com";
-          const email = user + "@" + domain;
-
-          const subject = encodeURIComponent("JournalWrite Support");
-
-          document.write(`
-        <a class="support-button" href="mailto:${email}?subject=${subject}">
-          Email Support
-        </a>
-      `);
-        </script>
       </div>
+    </nav>
+  </header>
+  <!-- Main page content -->
+  <main id="main" class="container">
+    <!-- Simple support introduction. FAQs live on each app's marketing page. -->
+    <section class="support-hero">
+      <h1>JournalWrite Support</h1>
+    </section>
+    <!-- Primary support call to action. Replace the email address before publishing. -->
+    <section class="support-contact card">
+      <div>
+        <h2>Email support</h2>
+        <p>If you have any questions or problems with JournalWrite, feel free to reach out!</p>
+      </div>
+      <a class="button button-primary"
+        href="mailto:jkap.apps+journalwrite@gmail.com?subject=JournalWrite Support" style="min-width: 160px;">Contact support</a>
+    </section>
+    <!-- A small amount of useful information without duplicating the app FAQ. -->
+    <section class="support-notes">
+      <article>
+        <h2>Before you write</h2>
+        <p>Please make sure you have the latest version of JournalWrite installed. If the problem continues, feel free to email us!</p>
+      </article>
+      <article>
+        <h2>Privacy requests</h2>
+        <p>For questions about your information or privacy, read the <a href="privacy.html">privacy policy</a>.</p>
+      </article>
     </section>
   </main>
-
-  <footer class="main-footer">
-    <div class="footer-section">
-      <h3>JournalWrite</h3>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="support.html">Support</a></li>
-        <li><a href="privacy.html">Privacy Policy</a></li>
-        <li>
-          <a href="https://apps.apple.com/app/id6763682076" target="_blank" class="app-store-link-nav">
-            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
-              alt="Download on the App Store" class="app-store-img">
+  <!-- Shared site footer -->
+  <footer class="site-footer">
+    <div class="footer-grid container">
+      <div>
+        <a class="brand" href="index.html">
+          <span class="brand-mark">JK</span>
+          Jacob Kappler
+        </a>
+        <p>
+          Indie app developer and high school student.
+        </p>
+      </div>
+      <div>
+        <p class="footer-title">Explore</p>
+        <div class="footer-links">
+          <a href="../../index.html#apps">Apps</a>
+          <a href="https://apps.apple.com/us/developer/jacob-kappler/id1894734920" target="_blank"
+            rel="noopener noreferrer">
+            Developer Profile
           </a>
-        </li>
-      </ul>
+          <!-- <a href="../../index.html#updates">Get Updates</a> -->
+        </div>
+      </div>
+      <div>
+        <p class="footer-title">JournalWrite</p>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="privacy.html">Privacy Policy</a>
+        </div>
+      </div>
+      <div>
+        <p class="footer-title">Social</p>
+        <div class="footer-social">
+          <a href="https://youtube.com/@JakeKailer" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+
+          <a href="https://instagram.com/jkap.apps" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a href="https://tiktok.com/@jkap.apps" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+
+          <a href="https://github.com/jacobk316" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+
+          <a href="https://www.producthunt.com/@jakekailer" target="_blank" rel="noopener noreferrer" aria-label="Product Hunt">
+            <i class="fa-brands fa-product-hunt"></i>
+          </a>
+        </div>
+      </div>
     </div>
-
-    <div class="footer-social">
-      <a href="https://youtube.com/@JakeKailer" target="_blank" aria-label="YouTube">
-        <i class="fab fa-youtube"></i>
-      </a>
-
-      <a href="https://instagram.com/jkap.apps" target="_blank" aria-label="Instagram">
-        <i class="fab fa-instagram"></i>
-      </a>
-
-      <a href="https://tiktok.com/@jkap.apps" target="_blank" aria-label="TikTok">
-        <i class="fab fa-tiktok"></i>
-      </a>
-
-      <a href="https://github.com/jacobk316" target="_blank" aria-label="GitHub">
-        <i class="fab fa-github"></i>
-      </a>
-
-      <a href="https://www.producthunt.com/@jakekailer" target="_blank" aria-label="Product Hunt">
-        <i class="fab fa-product-hunt"></i>
-      </a>
-    </div>
-
-
-    <div class="footer-bottom">
-      <p>&copy; 2026 Jacob Kappler. All rights reserved.</p>
+    <div class="footer-bottom container">
+      <span>
+        &copy;
+        <span data-year></span>
+        Jacob Kappler. All rights reserved.
+      </span>
+      <span>
+        <a href="../../privacy.html">Privacy</a>
+        ·
+        <a href="../../support.html">Support</a>
+      </span>
     </div>
   </footer>
-  <script src="../../form-rest.js"></script>
+  <script src="../../site.js"></script>
 </body>
 
 </html>

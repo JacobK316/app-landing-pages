@@ -1,0 +1,46 @@
+/* Privacy and support page styles. */
+
+/* Narrow reading layout for legal and support copy. */
+.text-hero {
+    padding: 40px 0 10px;
+}
+.text-hero p {
+    max-width: 680px;
+    font-size: 1.12rem;
+}
+.prose {
+    max-width: 760px;
+}
+.prose h2 {
+    margin: 28px 0 15px;
+    font-size: clamp(1.6rem, 5vw, 2.3rem);
+}
+.prose h3 {
+    margin: 28px 0 9px;
+}
+.prose ul {
+    color: var(--muted);
+}
+/* Support contact cards. */
+.support-grid {
+    display: grid;
+    gap: 16px;
+}
+.support-card {
+    padding: 25px;
+}
+.support-card a {
+    color: var(--blue-light);
+    font-weight: 750;
+}
+.support-card p {
+    margin-bottom: 10px;
+}
+.support-button {
+    color: var(--blue-light);
+}
+@media (min-width: 700px) {
+    .support-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

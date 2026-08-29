@@ -1,0 +1,19 @@
+/* For values like colors, radii, shadows, etc. */
+:root {
+    --bg: #07111f;
+    --surface: #0d1a2c;
+    --surface-raised: #12233a;
+    --text: #f4f8ff;
+    --muted: #9cabc0;
+    --line: rgba(182, 211, 255, .15);
+    --blue: #3b9cff;
+    --blue-light: #8dcbff;
+    --blue-deep: #1163c9;
+    --success: #7ee2b8;
+    --in-progress: rgb(220, 220, 48);
+    --shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+    --radius-sm: 14px;
+    --radius-md: 22px;
+    --radius-lg: 32px;
+    --content: 1120px;
+}

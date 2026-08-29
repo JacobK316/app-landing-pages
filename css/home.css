@@ -1,0 +1,97 @@
+/* Styles for the main page of the website. */
+
+/* Hero area and its decorative phone orbit. */
+.home-hero {
+    padding: 74px 0 10px;
+    text-align: center;
+}
+.home-hero p {
+    max-width: 610px;
+    margin: 20px auto 28px;
+    font-size: clamp(1.05rem, 3vw, 1.26rem);
+}
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+.hero-orbit {
+    position: relative;
+    display: grid;
+    width: min(100%, 510px);
+    min-height: 310px;
+    margin: 52px auto 0;
+    place-items: center;
+    border: 1px solid var(--line);
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(39, 139, 255, .25), transparent 47%);
+}
+.hero-orbit::before, .hero-orbit::after {
+    content: "";
+    position: absolute;
+    border: 1px solid rgba(141, 203, 255, .2);
+    border-radius: 50%;
+}
+.hero-orbit::before {
+    inset: 14%;
+}
+.hero-orbit::after {
+    inset: 0;
+}
+.hero-orbit .phone {
+    transform: rotate(-7deg);
+}
+.orbit-dot {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: var(--blue-light);
+    box-shadow: 0 0 22px var(--blue);
+}
+.orbit-dot.one {
+    top: 16%;
+    right: 16%;
+}
+.orbit-dot.two {
+    bottom: 22%;
+    left: 12%;
+}
+/* Three-step explanation cards. */
+.process {
+    display: grid;
+    gap: 18px;
+    counter-reset: process;
+}
+.process-step {
+    position: relative;
+    padding: 22px 22px 22px 72px;
+}
+.process-step::before {
+    counter-increment: process;
+    content: "0" counter(process);
+    position: absolute;
+    top: 19px;
+    left: 21px;
+    color: var(--blue-light);
+    font-weight: 850;
+}
+.process-step p {
+    margin-bottom: 0;
+}
+@media (min-width: 700px) {
+    .home-hero {
+        padding-top: 60px;
+    }
+    .process {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.app-card-visual img {
+    width: 160px;
+    height: 160px;
+
+    border-radius: 55px;
+}

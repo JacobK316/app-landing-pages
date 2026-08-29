@@ -1,0 +1,62 @@
+/* Simple support page layout. */
+.support-hero {
+    padding: 56px 0 2px;
+    text-align: center;
+}
+.support-hero p {
+    max-width: 500px;
+    margin: 18px auto 0;
+    font-size: 1.12rem;
+}
+.support-contact {
+    display: grid;
+    gap: 20px;
+    align-items: center;
+    padding: 28px;
+    margin: 26px 0 40px;
+}
+.support-contact .feature-icon {
+    margin-bottom: 0;
+}
+.support-contact h2 {
+    margin-bottom: 8px;
+    font-size: clamp(1.5rem, 5vw, 2rem);
+}
+.support-contact p {
+    max-width: 620px;
+    margin-bottom: 0;
+}
+.support-contact .button {
+    width: fit-content;
+}
+.support-notes {
+    display: grid;
+    gap: 16px;
+    max-width: 900px;
+    padding-bottom: 76px;
+}
+.support-notes article {
+    padding: 6px 0;
+}
+.support-notes h2 {
+    margin-bottom: 10px;
+    font-size: 1.18rem;
+}
+.support-notes p {
+    max-width: 560px;
+    margin-bottom: 10px;
+}
+.support-notes a {
+    color: var(--blue-light);
+    font-weight: 750;
+}
+@media (min-width: 700px) {
+    .support-contact {
+        grid-template-columns: auto 1fr auto;
+        padding: 40px;
+    }
+    .support-notes {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 56px;
+    }
+}

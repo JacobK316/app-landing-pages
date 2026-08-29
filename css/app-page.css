@@ -1,0 +1,95 @@
+/* Reusable app-detail page template. */
+
+/* App hero: copy on the left, phone mockup on larger screens. */
+.app-hero {
+    padding: 60px 0 40px;
+}
+.app-hero-grid {
+    display: grid;
+    gap: 42px;
+    align-items: center;
+}
+.app-hero-copy p {
+    max-width: 570px;
+    font-size: 1.1rem;
+}
+.app-hero-visual {
+    display: grid;
+    min-height: 420px;
+    place-items: center;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    background: radial-gradient(circle at 50% 55%, rgba(38, 143, 255, .4), transparent 43%), linear-gradient(145deg, #102e57, #07111f);
+}
+.app-hero-visual .phone {
+    width: 205px;
+}
+.check-list {
+    display: grid;
+    gap: 10px;
+    margin: 24px 0;
+    padding: 0;
+    list-style: none;
+    color: var(--muted);
+}
+.check-list li::before {
+    content: "✓";
+    margin-right: 10px;
+    color: var(--success);
+    font-weight: 900;
+}
+/* Two-column informational panel. */
+.split-panel {
+    display: grid;
+    gap: 28px;
+    align-items: center;
+    padding: 28px;
+    border-radius: var(--radius-lg);
+    background: var(--surface);
+}
+.split-panel p:last-child {
+    margin-bottom: 0;
+}
+@media (min-width: 700px) {
+    .app-hero {
+        padding: 92px 0 70px;
+    }
+    .split-panel {
+        grid-template-columns: 1fr 1fr;
+        padding: 48px;
+    }
+}
+
+.app-logo-heading {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* Responsive top/bottom spacing */
+    padding: clamp(24px, 5vw, 60px) 20px 30px;
+
+    box-sizing: border-box;
+}
+
+.app-logo-heading-img {
+    width: clamp(60px, 82vw, 180px);
+    height: clamp(60px, 82vw, 180px);
+
+    border-radius: clamp(14px, 2vw, 22px);
+
+    object-fit: contain;
+    display: block;
+}
+
+.app-logo-heading-title {
+    margin: clamp(12px, 2vw, 18px) 0 0;
+
+    font-size: clamp(24px, 4vw, 36px);
+    line-height: 1.2;
+    font-weight: 700;
+    font-family: "Inter", sans-serif;
+
+    text-align: center;
+}
