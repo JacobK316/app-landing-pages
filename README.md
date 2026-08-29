@@ -1,77 +1,70 @@
 # App Landing Pages
 
-Welcome to the repo for the official landing page for my apps! This project showcases the webpages for two privacy-first, distraction-free apps—**JournalWrite** and **DreamFrame**—being built with care, creativity, and a focus on user experience.
+The official website for Jacob Kappler's iPhone apps. The site introduces each app, provides support and privacy information, and links visitors to the App Store and developer profile.
 
-## Overview
+## Apps
 
-This repository contains the source code for the landing pages of:
-- **JournalWrite**: A free, offline mood journaling app for iOS.
-- **DreamFrame**: A private dream journaling app, also for iOS.
+- **JournalWrite** — A simple, privacy-focused journal for iPhone. JournalWrite is designed for distraction-free writing, private on-device entries, and useful progress insights.
+- **Flock Stats** — An in-development chicken and egg tracker. It is being built to make logging flock production, expenses, and trends straightforward.
 
-Each landing page is designed to be clean, modern, and informative, with clear navigation, support, and privacy information.
+## Live Site
 
-## Contributing
-
-Contributions are most welcome! If you’d like to improve the landing page, fix bugs, or add features:
-
-1. Fork this repository
-2. Create a new branch (`git checkout -b feature-name`)
-3. Make your changes
-4. Commit and push (`git commit -m "Your message"`)
-5. Open a pull request
-
-Please keep your code clean and follow the existing style to the best of your ability. Thank you!
-
-## Things To Know
-
-These webpages are under construction and may change frequently. Development ongoing, which does mean odd placeholder text!
-The App Store links are not functional right now, but they should be live in April 2026.
-
-## Live Demo
-
-You can view the live site at:  
-[https://jacobk316.github.io/app-landing-pages/](https://jacobk316.github.io/app-landing-pages/)
-
-## Project Structure
-
-```
-app-landing-pages/
-├── index.html              # Main landing page
-├── story.html              # Developer story page
-├── style.css               # Shared styles
-├── images/                 # App logos and images
-│   ├── Developer.jpeg
-│   ├── JournalWriteLogo.png
-│   └── DreamFrameImage.png
-├── apps/
-│   ├── journalwrite/
-│   │   ├── index.html      # JournalWrite home
-│   │   ├── support.html    # JournalWrite support/FAQ
-│   │   └── privacy.html    # JournalWrite privacy policy
-│   └── dreamframe/
-│       ├── index.html      # DreamFrame home
-│       ├── support.html    # DreamFrame support/FAQ
-│       └── privacy.html    # DreamFrame privacy policy
-├── LICENSE                 # MIT License
-└── README.md               # About the project
-```
+[jacobk316.github.io/app-landing-pages](https://jacobk316.github.io/app-landing-pages/)
 
 ## Features
 
-- **Modern, Responsive Design**: Looks great on desktop and mobile (I think!).
-- **Support & Privacy**: Dedicated pages for FAQs and privacy policies.
-- **Developer Story**: Learn about the creator and his journey.
-- **Social Links**: Check me out on GitHub, X (Twitter), and Instagram.
-- **App Store Badges**: Direct download links for each app.
+- Responsive, static HTML/CSS site with no build step
+- Dedicated landing page for each app
+- pp Store download links
+- Shared website support and privacy pages
+- App-specific support and privacy pages
+- Accessible mobile navigation and skip links
+- Social links and developer-profile links
 
-## Getting Started
+## Project Structure
 
-To run locally:
+```text
+app-landing-pages/
+├── index.html                  # Main apps landing page
+├── support.html                # Website support page
+├── privacy.html                # Website privacy policy
+├── site.js                     # Mobile navigation and footer year
+├── css/
+│   ├── variables.css           # Shared design tokens
+│   ├── global.css              # Global styles and utilities
+│   ├── components.css          # Header, footer, cards, and shared UI
+│   ├── home.css                # Main landing page styles
+│   ├── app-page.css            # App landing page styles
+│   ├── app-support.css         # Support page styles
+│   └── app-privacy-policy.css  # Privacy page styles
+├── images/
+│   ├── JournalWrite/           # JournalWrite icon and screenshots
+│   └── FlockStats/             # Flock Stats app icon
+├── apps/
+│   ├── journalwrite/
+│   │   ├── index.html          # JournalWrite landing page
+│   │   ├── support.html        # JournalWrite support
+│   │   └── privacy.html        # JournalWrite privacy policy
+│   └── flockstats/
+│       ├── index.html          # Flock Stats landing page
+│       └── support.html        # Flock Stats support
+├── LICENSE
+└── README.md
+```
 
-1. **Clone the repository:**
+## Running Locally
+
+1. Clone the repository:
+
    ```sh
    git clone https://github.com/jacobk316/app-landing-pages.git
    ```
-2. Open the folder in your code editor (e.g., VS Code).
-3. Open `index.html` in your browser.
-4. No build steps required — just static HTML, CSS, and images.
+
+2. Open the project folder in VS Code or another editor.
+3. Open `index.html` in a browser, or use a local static-server extension for live reload.
+
+No packages, framework setup, or build command are required.
+
+## License
+
+This project is available under the [MIT License](LICENSE).
